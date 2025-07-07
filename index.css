@@ -1,0 +1,57 @@
+html,
+body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: rgba(0, 0, 0, 0.838);
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 30px;
+}
+
+.header-left,
+.header-right {
+   width: 600px; /* or auto */
+   text-align: center;
+   color: #666;
+   font-size: 20px;
+}
+
+#todo-input {
+   color: rgba(0, 0, 0, 0.838);
+}
+
+#todo-list li {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 10px;
+   max-width: 400px;
+   cursor: pointer;
+}
+
+.checkmark {
+   color: green;
+   cursor: pointer;
+   user-select: none;
+   display: none;
+}
+
+.completed .task-text {
+   text-decoration: line-through;
+   color: gray;
+}
+
+.completed .checkmark {
+   display: inline;
+   color: green;
+}
